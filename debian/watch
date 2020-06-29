@@ -1,0 +1,2 @@
+version=3
+https://github.com/corrados/jamulus/releases r.*/(\d[\d\.]+)\.tar\.gz

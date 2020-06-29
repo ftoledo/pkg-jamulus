@@ -1,0 +1,23 @@
+Source: jamulus
+Section: sound
+Priority: optional
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: debhelper (>= 10), qtbase5-dev (>= 5.7), qt5-default (>= 5.7),
+    libjack-jackd2-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/corrados/jamulus
+Vcs-Git: https://github.com/ftoledo/pkg-jamulus.git
+Vcs-Browser: https://github.com/ftoledo/pkg-jamulus
+
+Package: jamulus
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Internet Jam Session Software
+ The Jamulus software enables musicians to perform real-time jam sessions over 
+ the internet. There is one server running the Jamulus server software which 
+ collects the audio data from each Jamulus client, mixes the audio data and
+ sends the mix back to each client.
+ .
+ Jamulus is Open Source software (GPL, GNU General Public License) and runs
+ under Windows (ASIO), MacOS (Core Audio) and Linux (Jack). It is based on 
+ the Qt framework and uses the OPUS audio codec.
